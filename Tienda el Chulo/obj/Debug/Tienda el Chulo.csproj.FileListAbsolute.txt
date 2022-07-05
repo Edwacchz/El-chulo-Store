@@ -1,0 +1,14 @@
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\bin\Debug\FontAwesome.Sharp.dll
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\bin\Debug\Siticone.UI.dll
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda el Chulo.csproj.AssemblyReference.cache
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda el Chulo.csproj.SuggestedBindingRedirects.cache
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda_el_Chulo.Properties.Resources.resources
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda el Chulo.csproj.GenerateResource.cache
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda el Chulo.csproj.CoreCompileInputs.cache
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda el Chulo.csproj.CopyComplete
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda_el_Chulo.FrmUsuarios.resources
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\bin\Debug\Tienda_el_chulo.exe.config
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\bin\Debug\Tienda_el_chulo.exe
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\bin\Debug\Tienda_el_chulo.pdb
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda_el_chulo.exe
+D:\TIENDA EL CHULO\Tienda el Chulo\Tienda el Chulo\obj\Debug\Tienda_el_chulo.pdb
