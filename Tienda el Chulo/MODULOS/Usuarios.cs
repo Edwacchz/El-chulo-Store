@@ -51,6 +51,7 @@ namespace Tienda_el_Chulo
 
                     cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
                     cmd.Parameters.AddWithValue("@Nombre_Icono", lblNumeroIcono.Text);
+                    cmd.Parameters.AddWithValue("@Estado","Activo");
 
                     cmd.ExecuteNonQuery();
                     cone.Close();
@@ -103,7 +104,7 @@ namespace Tienda_el_Chulo
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox2.Image;
-            lblNumeroIcono.Text = "1";
+            lblNumeroIcono.Text = "0";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
         }
@@ -154,35 +155,35 @@ namespace Tienda_el_Chulo
         }
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            imgPerfil.Image = pictureBox2.Image;
-            lblNumeroIcono.Text = "5";
+            imgPerfil.Image = pictureBox9.Image;
+            lblNumeroIcono.Text = "7";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
         }
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            imgPerfil.Image = pictureBox9.Image;
+            imgPerfil.Image = pictureBox10.Image;
             lblNumeroIcono.Text = "8";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
         }
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            imgPerfil.Image = pictureBox10.Image;
+            imgPerfil.Image = pictureBox11.Image;
             lblNumeroIcono.Text = "9";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
         }
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            imgPerfil.Image = pictureBox11.Image;
+            imgPerfil.Image = pictureBox12.Image;
             lblNumeroIcono.Text = "10";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
         }
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            imgPerfil.Image = pictureBox12.Image;
+            imgPerfil.Image = pictureBox13.Image;
             lblNumeroIcono.Text = "11";
             lblAnuncioIcono.Visible = false;
             panelIconos.Visible = false;
@@ -305,5 +306,60 @@ namespace Tienda_el_Chulo
             }
         }
 
+        private void imgPerfil_Click(object sender, EventArgs e)
+        {
+            panelIconos.Visible = true;
+        }
+
+        private void dataListUsers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == this.dataListUsers.Columns["btnDeleted"].Index)
+            {
+                DialogResult result;
+                result = MessageBox.Show("¿Realmente Desea eliminar este Usuario?", "Eliminando Reguistros", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
+                {
+                    SqlCommand cmd;
+                    try
+                    {
+                        foreach (DataGridViewRow row in dataListUsers.SelectedRows)
+                        {
+
+                        
+                            int OneKey = Convert.ToInt32(row.Cells["id_User"].Value);
+                            string Usuario = Convert.ToString(row.Cells["login"].Value);
+
+                            try
+                            {
+                                SqlConnection cone = new SqlConnection();
+                                cone.ConnectionString = Conexion.CONEXIONMAESTRA.CONEXION;
+                                cone.Open();
+
+                                cmd = new SqlCommand("eliminar_usuraio", cone);
+                                cmd.CommandType = CommandType.StoredProcedure;
+
+                                cmd.Parameters.AddWithValue("@idUser", OneKey);
+                                cmd.Parameters.AddWithValue("@login", Usuario);
+                                cmd.ExecuteNonQuery();
+
+                                cone.Close();
+
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+
+                        }
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                }
+                Mostrar();
+            }
+        }
     }
 }

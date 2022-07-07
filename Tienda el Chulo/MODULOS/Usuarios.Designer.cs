@@ -29,23 +29,44 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsuarios));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
+            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.siticonePanel2 = new Siticone.UI.WinForms.SiticonePanel();
             this.siticoneTextBox1 = new Siticone.UI.WinForms.SiticoneTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.siticonePanel3 = new Siticone.UI.WinForms.SiticonePanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelAgregarUser = new Siticone.UI.WinForms.SiticonePanel();
             this.panelIconos = new Siticone.UI.WinForms.SiticonePanel();
+            this.pboxAddImagenPerfil = new FontAwesome.Sharp.IconPictureBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnVolver = new FontAwesome.Sharp.IconButton();
+            this.btnGuardarCambios = new FontAwesome.Sharp.IconButton();
+            this.btnGuardar = new FontAwesome.Sharp.IconButton();
             this.panelImputDatosUser = new Siticone.UI.WinForms.SiticonePanel();
+            this.lblAnuncioIcono = new System.Windows.Forms.Label();
+            this.imgPerfil = new System.Windows.Forms.PictureBox();
             this.lblIdUser = new System.Windows.Forms.Label();
             this.lblNumeroIcono = new System.Windows.Forms.Label();
-            this.lblAnuncioIcono = new System.Windows.Forms.Label();
             this.txtRol = new Siticone.UI.WinForms.SiticoneComboBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -61,53 +82,33 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pboxAddImagenPerfil = new FontAwesome.Sharp.IconPictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.btnVolver = new FontAwesome.Sharp.IconButton();
-            this.btnGuardarCambios = new FontAwesome.Sharp.IconButton();
-            this.btnGuardar = new FontAwesome.Sharp.IconButton();
-            this.imgPerfil = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnClose = new FontAwesome.Sharp.IconPictureBox();
             this.dataListUsers = new Siticone.UI.WinForms.SiticoneDataGridView();
             this.btnDeleted = new System.Windows.Forms.DataGridViewImageColumn();
             this.siticonePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.siticonePanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.siticonePanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelAgregarUser.SuspendLayout();
             this.panelIconos.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panelImputDatosUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddImagenPerfil)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.panelImputDatosUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataListUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -122,6 +123,26 @@
             this.siticonePanel1.ShadowDecoration.Parent = this.siticonePanel1;
             this.siticonePanel1.Size = new System.Drawing.Size(677, 30);
             this.siticonePanel1.TabIndex = 0;
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnClose.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.X;
+            this.btnClose.IconColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClose.IconSize = 25;
+            this.btnClose.Location = new System.Drawing.Point(652, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(25, 30);
+            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnClose.TabIndex = 2;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label1
             // 
@@ -186,6 +207,16 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.AutoSize = false;
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Transparent;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(30, 30);
+            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            // 
             // siticonePanel3
             // 
             this.siticonePanel3.Controls.Add(this.pictureBox1);
@@ -196,6 +227,17 @@
             this.siticonePanel3.Size = new System.Drawing.Size(128, 316);
             this.siticonePanel3.TabIndex = 2;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(3, 157);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(122, 89);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panelAgregarUser
             // 
             this.panelAgregarUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
@@ -204,10 +246,10 @@
             this.panelAgregarUser.Controls.Add(this.btnGuardarCambios);
             this.panelAgregarUser.Controls.Add(this.btnGuardar);
             this.panelAgregarUser.Controls.Add(this.panelImputDatosUser);
-            this.panelAgregarUser.Location = new System.Drawing.Point(0, 96);
+            this.panelAgregarUser.Location = new System.Drawing.Point(0, 114);
             this.panelAgregarUser.Name = "panelAgregarUser";
             this.panelAgregarUser.ShadowDecoration.Parent = this.panelAgregarUser;
-            this.panelAgregarUser.Size = new System.Drawing.Size(677, 334);
+            this.panelAgregarUser.Size = new System.Drawing.Size(677, 313);
             this.panelAgregarUser.TabIndex = 4;
             // 
             // panelIconos
@@ -216,318 +258,11 @@
             this.panelIconos.Controls.Add(this.pboxAddImagenPerfil);
             this.panelIconos.Controls.Add(this.flowLayoutPanel2);
             this.panelIconos.Controls.Add(this.flowLayoutPanel1);
-            this.panelIconos.Location = new System.Drawing.Point(36, 18);
+            this.panelIconos.Location = new System.Drawing.Point(439, 137);
             this.panelIconos.Name = "panelIconos";
             this.panelIconos.ShadowDecoration.Parent = this.panelIconos;
-            this.panelIconos.Size = new System.Drawing.Size(597, 260);
+            this.panelIconos.Size = new System.Drawing.Size(194, 141);
             this.panelIconos.TabIndex = 3;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox8);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox9);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox10);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox11);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox12);
-            this.flowLayoutPanel2.Controls.Add(this.pictureBox13);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 104);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(523, 86);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(523, 86);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // panelImputDatosUser
-            // 
-            this.panelImputDatosUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
-            this.panelImputDatosUser.Controls.Add(this.lblAnuncioIcono);
-            this.panelImputDatosUser.Controls.Add(this.imgPerfil);
-            this.panelImputDatosUser.Controls.Add(this.lblIdUser);
-            this.panelImputDatosUser.Controls.Add(this.lblNumeroIcono);
-            this.panelImputDatosUser.Controls.Add(this.txtRol);
-            this.panelImputDatosUser.Controls.Add(this.panel4);
-            this.panelImputDatosUser.Controls.Add(this.panel3);
-            this.panelImputDatosUser.Controls.Add(this.panel2);
-            this.panelImputDatosUser.Controls.Add(this.panel1);
-            this.panelImputDatosUser.Controls.Add(this.txtCorreo);
-            this.panelImputDatosUser.Controls.Add(this.txtPassword);
-            this.panelImputDatosUser.Controls.Add(this.txtUsuario);
-            this.panelImputDatosUser.Controls.Add(this.txtNombre);
-            this.panelImputDatosUser.Controls.Add(this.label6);
-            this.panelImputDatosUser.Controls.Add(this.label5);
-            this.panelImputDatosUser.Controls.Add(this.label4);
-            this.panelImputDatosUser.Controls.Add(this.label3);
-            this.panelImputDatosUser.Controls.Add(this.label2);
-            this.panelImputDatosUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelImputDatosUser.Location = new System.Drawing.Point(36, 18);
-            this.panelImputDatosUser.Name = "panelImputDatosUser";
-            this.panelImputDatosUser.ShadowDecoration.Parent = this.panelImputDatosUser;
-            this.panelImputDatosUser.Size = new System.Drawing.Size(597, 260);
-            this.panelImputDatosUser.TabIndex = 0;
-            // 
-            // lblIdUser
-            // 
-            this.lblIdUser.AutoSize = true;
-            this.lblIdUser.Location = new System.Drawing.Point(384, 4);
-            this.lblIdUser.Name = "lblIdUser";
-            this.lblIdUser.Size = new System.Drawing.Size(57, 20);
-            this.lblIdUser.TabIndex = 4;
-            this.lblIdUser.Text = "label7";
-            // 
-            // lblNumeroIcono
-            // 
-            this.lblNumeroIcono.AutoSize = true;
-            this.lblNumeroIcono.Location = new System.Drawing.Point(466, 199);
-            this.lblNumeroIcono.Name = "lblNumeroIcono";
-            this.lblNumeroIcono.Size = new System.Drawing.Size(57, 20);
-            this.lblNumeroIcono.TabIndex = 14;
-            this.lblNumeroIcono.Text = "label7";
-            // 
-            // lblAnuncioIcono
-            // 
-            this.lblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.lblAnuncioIcono.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblAnuncioIcono.ForeColor = System.Drawing.Color.White;
-            this.lblAnuncioIcono.Location = new System.Drawing.Point(426, 53);
-            this.lblAnuncioIcono.Name = "lblAnuncioIcono";
-            this.lblAnuncioIcono.Size = new System.Drawing.Size(156, 146);
-            this.lblAnuncioIcono.TabIndex = 12;
-            this.lblAnuncioIcono.Text = "Elige un Icono";
-            this.lblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblAnuncioIcono.Click += new System.EventHandler(this.lblAnuncioIcono_Click);
-            // 
-            // txtRol
-            // 
-            this.txtRol.BackColor = System.Drawing.Color.Transparent;
-            this.txtRol.BorderThickness = 0;
-            this.txtRol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtRol.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(126)))), ((int)(((byte)(58)))));
-            this.txtRol.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRol.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtRol.ForeColor = System.Drawing.Color.White;
-            this.txtRol.HoveredState.Parent = this.txtRol;
-            this.txtRol.ItemHeight = 30;
-            this.txtRol.Items.AddRange(new object[] {
-            "Solo ventas (No esta autorizado para manejar dinero)",
-            "Cajero (Si esta autorizado para manejar dinero)",
-            "Administrador(Contral Total)"});
-            this.txtRol.ItemsAppearance.Parent = this.txtRol;
-            this.txtRol.Location = new System.Drawing.Point(210, 185);
-            this.txtRol.Name = "txtRol";
-            this.txtRol.ShadowDecoration.Parent = this.txtRol;
-            this.txtRol.Size = new System.Drawing.Size(209, 36);
-            this.txtRol.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.panel4.Location = new System.Drawing.Point(219, 173);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 1);
-            this.panel4.TabIndex = 10;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.panel3.Location = new System.Drawing.Point(219, 133);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 1);
-            this.panel3.TabIndex = 10;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.panel2.Location = new System.Drawing.Point(219, 92);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 1);
-            this.panel2.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.panel1.Location = new System.Drawing.Point(219, 54);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 1);
-            this.panel1.TabIndex = 9;
-            // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Animated = false;
-            this.txtCorreo.BorderThickness = 0;
-            this.txtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCorreo.DefaultText = "";
-            this.txtCorreo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCorreo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCorreo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCorreo.DisabledState.Parent = this.txtCorreo;
-            this.txtCorreo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCorreo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
-            this.txtCorreo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCorreo.FocusedState.Parent = this.txtCorreo;
-            this.txtCorreo.ForeColor = System.Drawing.Color.White;
-            this.txtCorreo.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCorreo.HoveredState.Parent = this.txtCorreo;
-            this.txtCorreo.Location = new System.Drawing.Point(218, 145);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(5);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.PasswordChar = '\0';
-            this.txtCorreo.PlaceholderText = "";
-            this.txtCorreo.SelectedText = "";
-            this.txtCorreo.ShadowDecoration.Parent = this.txtCorreo;
-            this.txtCorreo.Size = new System.Drawing.Size(200, 31);
-            this.txtCorreo.TabIndex = 8;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Animated = false;
-            this.txtPassword.BorderThickness = 0;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.Parent = this.txtPassword;
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.ForeColor = System.Drawing.Color.White;
-            this.txtPassword.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.HoveredState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(218, 105);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
-            this.txtPassword.PlaceholderText = "";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
-            this.txtPassword.Size = new System.Drawing.Size(200, 31);
-            this.txtPassword.TabIndex = 7;
-            // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Animated = false;
-            this.txtUsuario.BorderThickness = 0;
-            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsuario.DefaultText = "";
-            this.txtUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsuario.DisabledState.Parent = this.txtUsuario;
-            this.txtUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
-            this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.FocusedState.Parent = this.txtUsuario;
-            this.txtUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtUsuario.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsuario.HoveredState.Parent = this.txtUsuario;
-            this.txtUsuario.Location = new System.Drawing.Point(218, 63);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.PasswordChar = '\0';
-            this.txtUsuario.PlaceholderText = "";
-            this.txtUsuario.SelectedText = "";
-            this.txtUsuario.ShadowDecoration.Parent = this.txtUsuario;
-            this.txtUsuario.Size = new System.Drawing.Size(200, 31);
-            this.txtUsuario.TabIndex = 6;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Animated = false;
-            this.txtNombre.BackColor = System.Drawing.Color.Transparent;
-            this.txtNombre.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.txtNombre.BorderThickness = 0;
-            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.DefaultText = "";
-            this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.DisabledState.Parent = this.txtNombre;
-            this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtNombre.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
-            this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.FocusedState.Parent = this.txtNombre;
-            this.txtNombre.ForeColor = System.Drawing.Color.White;
-            this.txtNombre.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNombre.HoveredState.Parent = this.txtNombre;
-            this.txtNombre.Location = new System.Drawing.Point(218, 22);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PasswordChar = '\0';
-            this.txtNombre.PlaceholderText = "";
-            this.txtNombre.SelectedText = "";
-            this.txtNombre.ShadowDecoration.Color = System.Drawing.Color.Transparent;
-            this.txtNombre.ShadowDecoration.Parent = this.txtNombre;
-            this.txtNombre.ShortcutsEnabled = false;
-            this.txtNombre.Size = new System.Drawing.Size(200, 31);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(10, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(176, 20);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Roll:";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(10, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Correo Electronico:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(10, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Contraseña:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(10, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 20);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Usuario:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(10, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre y Apellido:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::Tienda_el_Chulo.Properties.Resources.Icon_Remove_Rojo;
-            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 549;
             // 
             // pboxAddImagenPerfil
             // 
@@ -543,6 +278,20 @@
             this.pboxAddImagenPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pboxAddImagenPerfil.TabIndex = 1;
             this.pboxAddImagenPerfil.TabStop = false;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox8);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox9);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox10);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox11);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox12);
+            this.flowLayoutPanel2.Controls.Add(this.pictureBox13);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(15, 104);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(523, 86);
+            this.flowLayoutPanel2.TabIndex = 0;
             // 
             // pictureBox8
             // 
@@ -609,6 +358,20 @@
             this.pictureBox13.TabIndex = 6;
             this.pictureBox13.TabStop = false;
             this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox2);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox3);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox5);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox6);
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(15, 12);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(523, 86);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox2
             // 
@@ -710,7 +473,7 @@
             this.btnGuardarCambios.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardarCambios.IconSize = 25;
             this.btnGuardarCambios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarCambios.Location = new System.Drawing.Point(254, 273);
+            this.btnGuardarCambios.Location = new System.Drawing.Point(196, 285);
             this.btnGuardarCambios.Name = "btnGuardarCambios";
             this.btnGuardarCambios.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGuardarCambios.Size = new System.Drawing.Size(168, 31);
@@ -742,115 +505,367 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // panelImputDatosUser
+            // 
+            this.panelImputDatosUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            this.panelImputDatosUser.Controls.Add(this.lblAnuncioIcono);
+            this.panelImputDatosUser.Controls.Add(this.imgPerfil);
+            this.panelImputDatosUser.Controls.Add(this.lblIdUser);
+            this.panelImputDatosUser.Controls.Add(this.lblNumeroIcono);
+            this.panelImputDatosUser.Controls.Add(this.txtRol);
+            this.panelImputDatosUser.Controls.Add(this.panel4);
+            this.panelImputDatosUser.Controls.Add(this.panel3);
+            this.panelImputDatosUser.Controls.Add(this.panel2);
+            this.panelImputDatosUser.Controls.Add(this.panel1);
+            this.panelImputDatosUser.Controls.Add(this.txtCorreo);
+            this.panelImputDatosUser.Controls.Add(this.txtPassword);
+            this.panelImputDatosUser.Controls.Add(this.txtUsuario);
+            this.panelImputDatosUser.Controls.Add(this.txtNombre);
+            this.panelImputDatosUser.Controls.Add(this.label6);
+            this.panelImputDatosUser.Controls.Add(this.label5);
+            this.panelImputDatosUser.Controls.Add(this.label4);
+            this.panelImputDatosUser.Controls.Add(this.label3);
+            this.panelImputDatosUser.Controls.Add(this.label2);
+            this.panelImputDatosUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelImputDatosUser.Location = new System.Drawing.Point(36, 18);
+            this.panelImputDatosUser.Name = "panelImputDatosUser";
+            this.panelImputDatosUser.ShadowDecoration.Parent = this.panelImputDatosUser;
+            this.panelImputDatosUser.Size = new System.Drawing.Size(597, 260);
+            this.panelImputDatosUser.TabIndex = 0;
+            // 
+            // lblAnuncioIcono
+            // 
+            this.lblAnuncioIcono.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.lblAnuncioIcono.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblAnuncioIcono.ForeColor = System.Drawing.Color.White;
+            this.lblAnuncioIcono.Location = new System.Drawing.Point(426, 51);
+            this.lblAnuncioIcono.Name = "lblAnuncioIcono";
+            this.lblAnuncioIcono.Size = new System.Drawing.Size(156, 143);
+            this.lblAnuncioIcono.TabIndex = 12;
+            this.lblAnuncioIcono.Text = "Elige un Icono";
+            this.lblAnuncioIcono.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblAnuncioIcono.Click += new System.EventHandler(this.lblAnuncioIcono_Click);
+            // 
             // imgPerfil
             // 
-            this.imgPerfil.Location = new System.Drawing.Point(426, 53);
+            this.imgPerfil.Location = new System.Drawing.Point(426, 47);
             this.imgPerfil.Name = "imgPerfil";
             this.imgPerfil.Size = new System.Drawing.Size(157, 150);
             this.imgPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgPerfil.TabIndex = 15;
             this.imgPerfil.TabStop = false;
+            this.imgPerfil.Click += new System.EventHandler(this.imgPerfil_Click);
             // 
-            // pictureBox1
+            // lblIdUser
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 157);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(122, 89);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.lblIdUser.AutoSize = true;
+            this.lblIdUser.Location = new System.Drawing.Point(384, 4);
+            this.lblIdUser.Name = "lblIdUser";
+            this.lblIdUser.Size = new System.Drawing.Size(57, 20);
+            this.lblIdUser.TabIndex = 4;
+            this.lblIdUser.Text = "label7";
             // 
-            // toolStripMenuItem1
+            // lblNumeroIcono
             // 
-            this.toolStripMenuItem1.AutoSize = false;
-            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
-            this.toolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Transparent;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(30, 30);
-            this.toolStripMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.lblNumeroIcono.AutoSize = true;
+            this.lblNumeroIcono.Location = new System.Drawing.Point(466, 201);
+            this.lblNumeroIcono.Name = "lblNumeroIcono";
+            this.lblNumeroIcono.Size = new System.Drawing.Size(57, 20);
+            this.lblNumeroIcono.TabIndex = 14;
+            this.lblNumeroIcono.Text = "label7";
             // 
-            // btnClose
+            // txtRol
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.btnClose.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClose.IconChar = FontAwesome.Sharp.IconChar.X;
-            this.btnClose.IconColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClose.IconSize = 25;
-            this.btnClose.Location = new System.Drawing.Point(652, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(25, 30);
-            this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnClose.TabIndex = 2;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.txtRol.BackColor = System.Drawing.Color.Transparent;
+            this.txtRol.BorderThickness = 0;
+            this.txtRol.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtRol.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(126)))), ((int)(((byte)(58)))));
+            this.txtRol.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRol.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtRol.ForeColor = System.Drawing.Color.White;
+            this.txtRol.HoveredState.Parent = this.txtRol;
+            this.txtRol.ItemHeight = 30;
+            this.txtRol.Items.AddRange(new object[] {
+            "Solo ventas (No esta autorizado para manejar dinero)",
+            "Cajero (Si esta autorizado para manejar dinero)",
+            "Administrador(Contral Total)"});
+            this.txtRol.ItemsAppearance.Parent = this.txtRol;
+            this.txtRol.Location = new System.Drawing.Point(210, 185);
+            this.txtRol.Name = "txtRol";
+            this.txtRol.ShadowDecoration.Parent = this.txtRol;
+            this.txtRol.Size = new System.Drawing.Size(209, 36);
+            this.txtRol.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.panel4.Location = new System.Drawing.Point(219, 173);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 1);
+            this.panel4.TabIndex = 10;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.panel3.Location = new System.Drawing.Point(219, 133);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 1);
+            this.panel3.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.panel2.Location = new System.Drawing.Point(219, 92);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 1);
+            this.panel2.TabIndex = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.panel1.Location = new System.Drawing.Point(219, 54);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 1);
+            this.panel1.TabIndex = 9;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Animated = false;
+            this.txtCorreo.BorderThickness = 0;
+            this.txtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCorreo.DefaultText = "";
+            this.txtCorreo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCorreo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCorreo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCorreo.DisabledState.Parent = this.txtCorreo;
+            this.txtCorreo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCorreo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            this.txtCorreo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCorreo.FocusedState.Parent = this.txtCorreo;
+            this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtCorreo.ForeColor = System.Drawing.Color.White;
+            this.txtCorreo.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCorreo.HoveredState.Parent = this.txtCorreo;
+            this.txtCorreo.Location = new System.Drawing.Point(218, 145);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(5);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.PasswordChar = '\0';
+            this.txtCorreo.PlaceholderText = "";
+            this.txtCorreo.SelectedText = "";
+            this.txtCorreo.ShadowDecoration.Parent = this.txtCorreo;
+            this.txtCorreo.Size = new System.Drawing.Size(200, 31);
+            this.txtCorreo.TabIndex = 8;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Animated = false;
+            this.txtPassword.BorderThickness = 0;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.Parent = this.txtPassword;
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedState.Parent = this.txtPassword;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.HoveredState.Parent = this.txtPassword;
+            this.txtPassword.Location = new System.Drawing.Point(218, 105);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
+            this.txtPassword.Size = new System.Drawing.Size(200, 31);
+            this.txtPassword.TabIndex = 7;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Animated = false;
+            this.txtUsuario.BorderThickness = 0;
+            this.txtUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsuario.DefaultText = "";
+            this.txtUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsuario.DisabledState.Parent = this.txtUsuario;
+            this.txtUsuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            this.txtUsuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsuario.FocusedState.Parent = this.txtUsuario;
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtUsuario.ForeColor = System.Drawing.Color.White;
+            this.txtUsuario.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsuario.HoveredState.Parent = this.txtUsuario;
+            this.txtUsuario.Location = new System.Drawing.Point(218, 63);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.PasswordChar = '\0';
+            this.txtUsuario.PlaceholderText = "";
+            this.txtUsuario.SelectedText = "";
+            this.txtUsuario.ShadowDecoration.Parent = this.txtUsuario;
+            this.txtUsuario.Size = new System.Drawing.Size(200, 31);
+            this.txtUsuario.TabIndex = 6;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Animated = false;
+            this.txtNombre.BackColor = System.Drawing.Color.Transparent;
+            this.txtNombre.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.txtNombre.BorderThickness = 0;
+            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNombre.DefaultText = "";
+            this.txtNombre.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNombre.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombre.DisabledState.Parent = this.txtNombre;
+            this.txtNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNombre.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            this.txtNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombre.FocusedState.Parent = this.txtNombre;
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtNombre.ForeColor = System.Drawing.Color.White;
+            this.txtNombre.HoveredState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNombre.HoveredState.Parent = this.txtNombre;
+            this.txtNombre.Location = new System.Drawing.Point(218, 22);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(5);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.PasswordChar = '\0';
+            this.txtNombre.PlaceholderText = "";
+            this.txtNombre.SelectedText = "";
+            this.txtNombre.ShadowDecoration.Color = System.Drawing.Color.Transparent;
+            this.txtNombre.ShadowDecoration.Parent = this.txtNombre;
+            this.txtNombre.ShortcutsEnabled = false;
+            this.txtNombre.Size = new System.Drawing.Size(200, 31);
+            this.txtNombre.TabIndex = 5;
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(10, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(176, 20);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Roll:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(10, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 20);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Correo Electronico:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(10, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(176, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Contraseña:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(10, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(176, 20);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Usuario:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(10, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nombre y Apellido:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::Tienda_el_Chulo.Properties.Resources.Icon_Remove_Rojo;
+            this.dataGridViewImageColumn1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 549;
             // 
             // dataListUsers
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataListUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataListUsers.AllowUserToAddRows = false;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            this.dataListUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataListUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataListUsers.BackgroundColor = System.Drawing.Color.White;
+            this.dataListUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
             this.dataListUsers.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataListUsers.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataListUsers.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataListUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataListUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataListUsers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dataListUsers.ColumnHeadersHeight = 40;
             this.dataListUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnDeleted});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListUsers.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Peru;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListUsers.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataListUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataListUsers.EnableHeadersVisualStyles = false;
             this.dataListUsers.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataListUsers.Location = new System.Drawing.Point(0, 114);
             this.dataListUsers.Name = "dataListUsers";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.Aqua;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataListUsers.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataListUsers.RowHeadersVisible = false;
             this.dataListUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataListUsers.Size = new System.Drawing.Size(549, 316);
             this.dataListUsers.TabIndex = 5;
             this.dataListUsers.Theme = Siticone.UI.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dataListUsers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataListUsers.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
             this.dataListUsers.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.dataListUsers.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dataListUsers.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dataListUsers.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataListUsers.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataListUsers.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
             this.dataListUsers.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataListUsers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataListUsers.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(114)))), ((int)(((byte)(50)))));
             this.dataListUsers.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataListUsers.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataListUsers.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.dataListUsers.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataListUsers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListUsers.ThemeStyle.HeaderStyle.Height = 4;
+            this.dataListUsers.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataListUsers.ThemeStyle.HeaderStyle.Height = 40;
             this.dataListUsers.ThemeStyle.ReadOnly = false;
-            this.dataListUsers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataListUsers.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(148)))), ((int)(((byte)(76)))));
             this.dataListUsers.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataListUsers.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dataListUsers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataListUsers.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
             this.dataListUsers.ThemeStyle.RowsStyle.Height = 22;
-            this.dataListUsers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataListUsers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataListUsers.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Peru;
+            this.dataListUsers.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataListUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListUsers_CellClick);
             this.dataListUsers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListUsers_CellDoubleClick);
             // 
             // btnDeleted
@@ -879,32 +894,32 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmUsuarios_Load);
             this.siticonePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.siticonePanel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.siticonePanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelAgregarUser.ResumeLayout(false);
             this.panelIconos.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panelImputDatosUser.ResumeLayout(false);
-            this.panelImputDatosUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddImagenPerfil)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.panelImputDatosUser.ResumeLayout(false);
+            this.panelImputDatosUser.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataListUsers)).EndInit();
             this.ResumeLayout(false);
 
@@ -961,8 +976,8 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.Label lblIdUser;
         private System.Windows.Forms.PictureBox imgPerfil;
-        private Siticone.UI.WinForms.SiticoneDataGridView dataListUsers;
         private System.Windows.Forms.DataGridViewImageColumn btnDeleted;
+        private Siticone.UI.WinForms.SiticoneDataGridView dataListUsers;
     }
 }
 
