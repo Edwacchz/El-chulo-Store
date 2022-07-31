@@ -209,5 +209,15 @@ namespace Tienda_el_Chulo.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap protipo_Logo_Black {
+            get {
+                object obj = ResourceManager.GetObject("protipo_Logo-Black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

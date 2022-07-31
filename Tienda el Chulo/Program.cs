@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tienda_el_Chulo.MODULOS;
 
 namespace Tienda_el_Chulo
 {
@@ -16,7 +17,8 @@ namespace Tienda_el_Chulo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmUsuarios());
+            //Application.Run(new FrmUsuarios());
+            Application.Run(new LOGIN());
         }
     }
 }

@@ -23,49 +23,168 @@ namespace Tienda_el_Chulo
             this.Close();
         }
 
-        private void btnGuardar_Click(object sender, EventArgs e)
+
+        private void Cargar_Estado_de_Iconos()
         {
-            if (txtNombre.Text != "")
+            //esta funcion oculta los las imagenes que ya se estan utilizando
+            try
             {
-                try
-                {
+                foreach (DataGridViewRow row in dataListUsers.Rows)
+                    try
+                    {
+                        string imgPerfil = Convert.ToString(row.Cells["Nombre_de_icono"].Value);
+                        if (imgPerfil == "0")
+                        {
+                           
+                            pictureBox2.Visible = false;
+                        }
+                        if (imgPerfil == "1")
+                        {
+
+                            pictureBox3.Visible = false;
+                        }
+                        if (imgPerfil == "2")
+                        {
+
+                            pictureBox4.Visible = false;
+                        }
+                        if (imgPerfil == "3")
+                        {
+
+                            pictureBox5.Visible = false;
+                        }
+                        if (imgPerfil == "4")
+                        {
+
+                            pictureBox6.Visible = false;
+                        }
+                        if (imgPerfil == "5")
+                        {
+
+                            pictureBox7.Visible = false;
+                        }
+                        if (imgPerfil == "6")
+                        {
+
+                            pictureBox8.Visible = false;
+                        }
+                        if (imgPerfil == "7")
+                        {
+
+                            pictureBox9.Visible = false;
+                        }
+                        if (imgPerfil == "8")
+                        {
+
+                            pictureBox10.Visible = false;
+                        }
+                        if (imgPerfil == "9")
+                        {
+
+                            pictureBox11.Visible = false;
+                        }
+                        if (imgPerfil == "10")
+                        {
+
+                            pictureBox12.Visible = false;
+                        }
+                        if (imgPerfil == "11")
+                        {
+
+                            pictureBox2.Visible = false;
+                        }
 
 
-                    SqlConnection cone = new SqlConnection();
-                    cone.ConnectionString = Conexion.CONEXIONMAESTRA.CONEXION;
-                    cone.Open();
-                    SqlCommand cmd = new SqlCommand();
-
-                    cmd = new SqlCommand("insertar_usuarios", cone);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Nombres", txtNombre.Text);
-                    cmd.Parameters.AddWithValue("@Login", txtUsuario.Text);
-                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-                    cmd.Parameters.AddWithValue("@Correo", txtCorreo.Text);
-                    cmd.Parameters.AddWithValue("@Rol", txtRol.Text);
-                    //cadena para transformar las imagenes de binarios a un formato sql
-                    //Esta funcion permite almacenar en la DataBase las imagenes que el usuario elija
-                    MemoryStream ms = new MemoryStream();
-                    imgPerfil.Image.Save(ms, imgPerfil.Image.RawFormat);
-
-
-                    cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
-                    cmd.Parameters.AddWithValue("@Nombre_Icono", lblNumeroIcono.Text);
-                    cmd.Parameters.AddWithValue("@Estado","Activo");
-
-                    cmd.ExecuteNonQuery();
-                    cone.Close();
-
-                    Mostrar();
-                    panelAgregarUser.Visible = false;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-
+                    }
+                    catch(Exception ex)
+                    {
+                      
+                    }
+            }
+            catch
+            {
 
             }
+        }
+        public bool validar_Mail(string sMail)
+        {
+            return System.Text.RegularExpressions.Regex.IsMatch(sMail, @"^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$");
+        }
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (validar_Mail(txtCorreo.Text) == false)
+            {
+                MessageBox.Show("Direccion de Correo electronico , No Valida, el correo debe tener el formato : Nombre@Dominio.com "
+                                + "Por Favor Escriba un correo electronico valido",
+                                 "Validacion de Correo electronico", MessageBoxButtons.OK);
+
+                txtCorreo.Focus();
+                txtCorreo.SelectAll();
+            }
+            else
+            {
+            
+            if (txtNombre.Text != "")
+            {
+                    if (txtRol.Text != "")
+                    {
+                        if (lblAnuncioIcono.Visible == false)
+                        {
+                            try
+                            {
+
+
+                                SqlConnection cone = new SqlConnection();
+                                cone.ConnectionString = Conexion.CONEXIONMAESTRA.CONEXION;
+                                cone.Open();
+                                SqlCommand cmd = new SqlCommand();
+
+                                cmd = new SqlCommand("insertar_usuarios", cone);
+                                cmd.CommandType = CommandType.StoredProcedure;
+                                cmd.Parameters.AddWithValue("@Nombres", txtNombre.Text);
+                                cmd.Parameters.AddWithValue("@Login", txtUsuario.Text);
+                                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                                cmd.Parameters.AddWithValue("@Correo", txtCorreo.Text);
+                                cmd.Parameters.AddWithValue("@Rol", txtRol.Text);
+                                //cadena para transformar las imagenes de binarios a un formato sql
+                                //Esta funcion permite almacenar en la DataBase las imagenes que el usuario elija
+                                MemoryStream ms = new MemoryStream();
+                                imgPerfil.Image.Save(ms, imgPerfil.Image.RawFormat);
+
+
+                                cmd.Parameters.AddWithValue("@Icono", ms.GetBuffer());
+                                cmd.Parameters.AddWithValue("@Nombre_Icono", lblNumeroIcono.Text);
+                                cmd.Parameters.AddWithValue("@Estado", "Activo");
+
+                                cmd.ExecuteNonQuery();
+                                cone.Close();
+
+                                Mostrar();
+                                panelAgregarUser.Visible = false;
+                            }
+                            catch (Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Elige una Imagen de Perfil" , "Registro", MessageBoxButtons.OK );
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Elige un Rol para el nuevo Usuario", "Registro", MessageBoxButtons.OK);
+                    }
+               
+            }
+            else
+                {
+                    MessageBox.Show("Completa el Campo Nombre ", " Registro", MessageBoxButtons.OK);
+                }
+            }
+
         }
 
         private void Mostrar()
@@ -96,99 +215,92 @@ namespace Tienda_el_Chulo
             }
         }
 
-
+        #region eventos clic en imagenes por defecto
+        private void fnocultarLblAnun_PanelIcono()
+        {
+            lblAnuncioIcono.Visible = false;
+            panelIconos.Visible = false;
+        }
         private void lblAnuncioIcono_Click(object sender, EventArgs e)
         {
+            Cargar_Estado_de_Iconos();
             panelIconos.Visible = true;
         }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox2.Image;
             lblNumeroIcono.Text = "0";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
-
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox3.Image;
             lblNumeroIcono.Text = "1";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox4.Image;
             lblNumeroIcono.Text = "2";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox5.Image;
             lblNumeroIcono.Text = "3";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox6.Image;
             lblNumeroIcono.Text = "4";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox7.Image;
             lblNumeroIcono.Text = "5";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox8.Image;
             lblNumeroIcono.Text = "6";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox9.Image;
             lblNumeroIcono.Text = "7";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox10.Image;
             lblNumeroIcono.Text = "8";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox11.Image;
             lblNumeroIcono.Text = "9";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox12.Image;
             lblNumeroIcono.Text = "10";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             imgPerfil.Image = pictureBox13.Image;
             lblNumeroIcono.Text = "11";
-            lblAnuncioIcono.Visible = false;
-            panelIconos.Visible = false;
+            fnocultarLblAnun_PanelIcono();
         }
-
+      #endregion
         private void FrmUsuarios_Load(object sender, EventArgs e)
         {
             //Esta seccion es cuando carga el Formulario
@@ -209,6 +321,7 @@ namespace Tienda_el_Chulo
             txtNombre.Focus();
             btnGuardar.Visible = true;
             btnGuardarCambios.Visible = false;
+            panelIconos.Visible = false;
         }
 
         private void dataListUsers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -253,9 +366,6 @@ namespace Tienda_el_Chulo
             //    MessageBox.Show(ex.Message);
             //}
 
-
-
-
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -269,7 +379,6 @@ namespace Tienda_el_Chulo
             {
                 try
                 {
-
 
                     SqlConnection cone = new SqlConnection();
                     cone.ConnectionString = Conexion.CONEXIONMAESTRA.CONEXION;
@@ -360,6 +469,58 @@ namespace Tienda_el_Chulo
                 }
                 Mostrar();
             }
+        }
+
+        private void pboxAddImagenPerfil_Click(object sender, EventArgs e)
+        {
+            dlg.InitialDirectory = "";
+            dlg.Filter = "imagenes|*.jpg;*png";
+            dlg.FilterIndex = 2;
+            dlg.Title = "Cargador de Imagenes de Perfil";
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                imgPerfil.BackgroundImage = null;
+                 imgPerfil.Image = new Bitmap(dlg.FileName);
+                imgPerfil.SizeMode = PictureBoxSizeMode.Zoom;
+                lblNumeroIcono.Text= Path.GetFileName(dlg.FileName);
+                lblAnuncioIcono.Visible = false;
+                panelIconos.Visible = false;
+            }
+        }
+        private void fnBuscar_Usuario()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                SqlDataAdapter da;
+
+                SqlConnection cone = new SqlConnection();
+                cone.ConnectionString = Conexion.CONEXIONMAESTRA.CONEXION;
+                cone.Open();
+
+                da = new SqlDataAdapter("buscar_usuario", cone);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
+                da.SelectCommand.Parameters.AddWithValue("@Texto", txtBuscar.Text); 
+                da.Fill(dt);
+                dataListUsers.DataSource = dt;
+                cone.Close();
+                //ocultando las columnas que no se van a mostrar (id,icono,etc)
+                dataListUsers.Columns[1].Visible = false;
+                dataListUsers.Columns[5].Visible = false;
+                dataListUsers.Columns[6].Visible = false;
+                dataListUsers.Columns[7].Visible = false;
+                dataListUsers.Columns[8].Visible = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            fnBuscar_Usuario();
         }
     }
 }
